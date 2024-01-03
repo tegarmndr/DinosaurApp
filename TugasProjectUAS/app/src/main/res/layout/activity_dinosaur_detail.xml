@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:fillViewport="true"
+    tools:context=".item.DinosaurDetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ornament_bone6" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="190dp"
+            android:src="@drawable/ornament_tools8" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ornament_tools7" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ornament_grass4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ornament_grass6" />
+
+        <RelativeLayout
+            android:id="@+id/layoutDinosaur"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/background_detail_dinosaur">
+
+            <ImageView
+                android:id="@+id/imageDinosaur"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                android:src="@drawable/dinosaur_allosaurus" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutName"
+            android:layout_below="@+id/layoutDinosaur"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/background_detail_name">
+
+            <TextView
+                android:id="@+id/textViewNameFill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginVertical="5dp"
+                android:fontFamily="@font/dino_park"
+                android:text="ALLOSAURUS"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:textColor="#f0f6e9"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutDescription"
+            android:layout_below="@+id/layoutName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_detail_description">
+
+            <TextView
+                android:id="@+id/textViewEatingType"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:text="Eat Type : "
+                android:fontFamily="@font/noto_serif_balinese_regular"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewEatingTypeFill"
+                android:layout_toEndOf="@id/textViewEatingType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Carnivore"
+                android:fontFamily="@font/noto_serif_balinese_regular"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/textViewAbout"
+                android:layout_below="@id/textViewEatingTypeFill"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingStart="15dp"
+                android:text="About :"
+                android:fontFamily="@font/noto_serif_balinese_regular"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewAboutFill"
+                android:layout_below="@id/textViewAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="This big meat-eater from the Jurassic of North America had a small horn over each eye. The horns may have helped Allosaurus recognize others of its kind."
+                android:fontFamily="@font/noto_serif_balinese_regular"
+                android:textSize="17sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/layoutDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/buttonBack"
+                android:layout_below="@id/layoutDescription"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_back">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginVertical="5dp"
+                    android:fontFamily="@font/dinotoons"
+                    android:text="Back"
+                    android:textColor="#f0f6e9"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/buttonPlaySound"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_back">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/dinotoons"
+                    android:text="Play Sound"
+                    android:textSize="20dp"
+                    android:textColor="#f0f6e9"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
